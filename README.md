@@ -19,7 +19,7 @@ Alignments converted to sorted, indexed BAM format using samtools (v.1.10)
 
 ## Wet Lab Protocol
 
-See [Wiki](https://github.com/adw222/CaBagE-manuscript/wiki)
+See the CaBaGE [Wiki](https://github.com/adw222/CaBagE-manuscript/wiki)
 
 
 

@@ -15,7 +15,14 @@ Alignments converted to sorted, indexed BAM format using samtools (v.1.10)
 
 ## On-target Read Quantification
 
-## Repeat Copy Number Estimation
+## Repeat Copy Number Distribution Histogram
+
+For CaBaGE targets containing short tandem repeats, the repeat copy number can be quantified with 
+
+`repeat_estimator.py 
+
+This script generates PLOT and estimate of STATs for cluster estimate with default copy number = 2
+
 
 ## Wet Lab Protocol
 

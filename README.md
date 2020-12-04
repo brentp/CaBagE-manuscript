@@ -5,13 +5,13 @@ This is the repository for the laboratory protocol and analysis code in *CaBagE:
 ## Data processing
 Basecalling was performed with the MinKNOW software (v.19.05.0) using the Guppy flip-flop algorithm. Resulting fastq files were aligned to GRCh38 with MiniMap2 (v.2.14-r894-dirty)
 
-*minimap2 -Yax map-ont $REFERENCE $FASTQ > $FILE.sam*
+`minimap2 -Yax map-ont $REFERENCE $FASTQ > $FILE.sam`
 
 Alignments converted to sorted, indexed BAM format using samtools (v.1.10)
 
-*samtools view -Sb $FILE.sam > $FILE.bam*
-*samtools sort -@ 8 -m 1G $FILE.bam -o $FILE.sorted.bam*
-*samtools index $FILE.sorted.bam*
+`samtools view -Sb $FILE.sam > $FILE.bam`
+`samtools sort -@ 8 -m 1G $FILE.bam -o $FILE.sorted.bam`
+`samtools index $FILE.sorted.bam`
 
 ## On-target Read Quantification
 
@@ -19,7 +19,7 @@ Alignments converted to sorted, indexed BAM format using samtools (v.1.10)
 
 For CaBaGE targets containing short tandem repeats, the repeat copy number can be quantified with 
 
-`repeat_estimator.py 
+`repeat_estimator.py $PARAMETERS` 
 
 This script generates PLOT and estimate of STATs for cluster estimate with default copy number = 2
 
